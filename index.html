@@ -1,1 +1,98 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jáchym Svoboda</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background-color: #C6F2F3;
+        background-image: url(background.png);
+        color: #16334D;
+    }
+
+    .container {
+        text-align: center;
+        background-color: #9cd0d1;
+        padding: 20px;
+        border-radius: 16px;
+        margin: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Jáchym Svoboda</h1>
+        <h2>moje stránka</h2>
+    </div>
+    <div class="container">
+        <h3>Něco o mě:</h3>
+        <div style="display: flex; justify-content: center;">
+            <p style="text-align: left;">
+                Ahoj, já jsem Jáchym, studuji druhý ročník oboru IT na <a href="https://ssps.cz">SSPŠ</a>, je mi 16 let.  <br>
+                Baví mě programování a stavění robotů. Mám rád lezení, nevěnuji se mu však velice dlouho. <br>
+                Rád sleduj filmy, seriáli, anime, čtu mangu .
+                
+            </p>
+        </div>
+    </div>
+    <div class="container"> 
+        <h3>Mé zájmy:</h3>
+        <div style="display: flex; justify-content: center; text-align: left;">
+            <ul>
+                <li>Programování</li>
+                <li>Video hry</li>
+                <li>manga & anime</li>
+                <li>filmy</li>
+                <li>pop kultura</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h3>obrázek: </h3>
+        <img src="/data/ok_cat.jpg" height="768" style="border-radius: 8px;" alt="cat giving thumps up">
+    </div>
+    <div class="container">
+        <h3>moje oblíbená "restaurace" - Potraviny Věčerka v Berouně u Plzeňské brány</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!4v1728209493034!6m8!1m7!1sCAoSLEFGMVFpcE1uODhHcUNpSFZnVldFdm5ORmpfaDh3bkJlZV9fUndUUWZzYnZY!2m2!1d49.96310778459157!2d14.07084873732136!3f6.79503853488305!4f1.2343639936210167!5f0.7820865974627469"
+            width="1024" height="768" style="border-radius: 8px; border: 0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <div class="container">
+        <h3>moje oblíbené YT video:</h3>
+        <iframe 
+            width="1024" height="768" src="https://www.youtube.com/embed/bvh2nlqpTYw"
+            title="Deep Thoughts With The Deep" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 8px;"></iframe>
+    </div>
+    <div class="container">
+        <h3>zpětná vazba:</h3>
+        <form action="/submit_form.html">
+            <label for="name">Jméno: </label>
+            <input type="text" id="name" name="name"><br>
+            <label for="message">zpráva: </label>
+            <input type="text" id="message" , name="message"><br>
+            <input type="submit" value="odeslat">
+        </form>
+    </div>
+    <div class="container">
+        <footer>
+            <p>© 2024 Jáchym Svoboda</p>
+            <p><a href="mailto:svoboda.ja.2023@skola.ssps.cz">svoboda.ja.2023@skola.ssps.cz</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
