@@ -27,24 +27,73 @@
         margin: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+    th, td {
+  background-color: #408e91;
+  border-radius: 5px;
+  width: 200px;
+}
 </style>
 
 <body>
+    <!-- úvod -->
     <div class="container">
         <h1>Jáchym Svoboda</h1>
         <h2>moje stránka</h2>
+        <img src="/data/my_face.jpg" height="200px" style="border-radius: 5px;" alt="my face">
     </div>
+    
+    <!-- něco o mě -->
     <div class="container">
         <h3>Něco o mě:</h3>
         <div style="display: flex; justify-content: center;">
             <p style="text-align: left;">
-                Ahoj, já jsem Jáchym, studuji druhý ročník oboru IT na <a href="https://ssps.cz">SSPŠ</a>, je mi 16 let.  <br>
-                Baví mě programování a stavění robotů. Mám rád lezení, nevěnuji se mu však velice dlouho. <br>
-                Rád sleduj filmy, seriáli, anime, čtu mangu .
-                
+                Ahoj, já jsem Jáchym, studuji druhý ročník oboru IT na <strong><a href="https://ssps.cz">SSPŠ</a></strong>, je mi <strong>16 let.</strong><br>
+                Baví mě <strong>programování</strong> a stavění robotů. Mám rád lezení, nevěnuji se mu však velice dlouho. <br>
+                Rád sleduj filmy, seriáli, anime, čtu mangu.  
             </p>
         </div>
     </div>
+    
+    <!-- Hodnocení předmětů -->
+    <div class="container">
+        <h3>Hodnocení předmětů a učitelů</h3>
+        <div style="display: flex; justify-content: center;">
+        <table style="background-color:  #216568; border-radius: 6px;">
+            <tr>
+                <th>Předmět</th>
+                <th>Učitel</th>
+                <th>ohodnocení předmětu</th>
+                <th>ohodnocení učitele</th>
+            </tr>
+            <tr>
+                <td>Matematika</th>
+                <td>Paní Souchová</th>
+                <td>4⭐</th>
+                <td>5⭐</th>
+            </tr>
+            <tr>
+                <td>PSI</td>
+                <td>Jan Lacina</td>
+                <td>1⭐</td>
+                <td>4⭐</td>
+            </tr>
+            <tr>
+                <td>Robotika</td>
+                <td>Martin Slovák</td>
+                <td>5⭐</td>
+                <td>5⭐</td>
+            </tr>
+            <tr>
+                <td>Fyzika</td>
+                <td>Jaroslav Kořínek</td>
+                <td>3⭐</td>
+                <td>5⭐</td>
+            </tr>
+        </table>
+        </div>
+    </div>
+    
+    <!-- mé zájmy -->
     <div class="container"> 
         <h3>Mé zájmy:</h3>
         <div style="display: flex; justify-content: center; text-align: left;">
@@ -57,10 +106,14 @@
             </ul>
         </div>
     </div>
+    
+    <!-- IMG-->
     <div class="container">
-        <h3>obrázek: </h3>
+        <h3>obrázek pro dobrou náladu: </h3>
         <img src="/data/ok_cat.jpg" height="768" style="border-radius: 8px;" alt="cat giving thumps up">
     </div>
+
+    <!-- vecerka -->
     <div class="container">
         <h3>moje oblíbená "restaurace" - Potraviny Věčerka v Berouně u Plzeňské brány</h3>
         <iframe
@@ -69,6 +122,8 @@
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </div>
+
+    <!-- real eyes realize real lies -->
     <div class="container">
         <h3>moje oblíbené YT video:</h3>
         <iframe 
@@ -77,6 +132,8 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 8px;"></iframe>
     </div>
+
+    <!-- feedback -->
     <div class="container">
         <h3>zpětná vazba:</h3>
         <form action="/submit_form.html">
@@ -87,11 +144,14 @@
             <input type="submit" value="odeslat">
         </form>
     </div>
+    
+    <!-- footer -->
     <div class="container">
         <footer>
             <p>© 2024 Jáchym Svoboda</p>
             <p><a href="mailto:svoboda.ja.2023@skola.ssps.cz">svoboda.ja.2023@skola.ssps.cz</a></p>
         </footer>
+        <img src="data/eppy_gaming_kitter.png" height="500px" alt="eppy_gaming_kitter">
     </div>
 </body>
 
